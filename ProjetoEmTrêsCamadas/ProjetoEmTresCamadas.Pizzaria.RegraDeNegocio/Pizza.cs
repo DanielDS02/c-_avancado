@@ -19,6 +19,7 @@ namespace ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio
         public string Sabor { get; set; }
         public TamanhoDePizza TamanhoDePizza { get; set; }
         public string Descricao {  get; set; }
+        public int Id { get; set; }
 
         public Pizza()
         {
