@@ -1,5 +1,8 @@
 ﻿// See https://aka.ms/new-console-template for more information
 using ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio;
+using ProjetoEmTresCamadas.Pizzaria.DAO;
+
+PizzaDAO pizzaDAO = new PizzaDAO(); 
 
 Console.WriteLine("Bem vindo a nossa pizzaria");
 Console.WriteLine("Gostaria de uma pizza, S para sim e N para não");
@@ -16,6 +19,8 @@ if (resposta == "S")
     var tamanho = Console.ReadLine();
     Console.WriteLine($"O tamanho escolhido foi {pizza.DefinirTamanho(tamanho)}");
 
+
+    pizzaDAO.CriaPizza(pizza);
     Console.WriteLine($"Sua pizza é {pizza.ToString()}");
 
     
