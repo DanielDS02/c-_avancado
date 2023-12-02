@@ -13,7 +13,12 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoEmTresCamadas.Pizzar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio", "ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio\ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio.csproj", "{58B97293-925D-407C-B649-8F042718FED0}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProjetoEmTresCamadas.Pizzaria.DAO", "ProjetoEmTresCamadas.Pizzaria.DAO\ProjetoEmTresCamadas.Pizzaria.DAO.csproj", "{B8909C6C-6D78-419B-9F76-D93A904970AE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProjetoEmTresCamadas.Pizzaria.DAO", "ProjetoEmTresCamadas.Pizzaria.DAO\ProjetoEmTresCamadas.Pizzaria.DAO.csproj", "{B8909C6C-6D78-419B-9F76-D93A904970AE}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Itens de Solução", "Itens de Solução", "{F05CAEFD-9CDF-45B8-AF30-B0B5370DA656}"
+	ProjectSection(SolutionItems) = preProject
+		..\README.md = ..\README.md
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

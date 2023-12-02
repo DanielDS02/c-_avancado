@@ -20,6 +20,7 @@ namespace ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio
         public TamanhoDePizza TamanhoDePizza { get; set; }
         public string Descricao {  get; set; }
         public int Id { get; set; }
+        public double Preco { get; set; } 
 
         public Pizza()
         {
@@ -46,16 +47,19 @@ namespace ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio
                 case "P":
                     {
                         TamanhoDePizza = TamanhoDePizza.Pequena;
+                        Preco = 50.0;
                         break;
                     }
                 case "M":
                     {
-                        TamanhoDePizza = TamanhoDePizza.Média; 
+                        TamanhoDePizza = TamanhoDePizza.Média;
+                        Preco = 65.0;
                         break;
                     }
                 case "G":
                     {
-                        TamanhoDePizza = TamanhoDePizza.Grande; 
+                        TamanhoDePizza = TamanhoDePizza.Grande;
+                        Preco = 80.0;
                         break;
                     }
                 default:
@@ -71,5 +75,6 @@ namespace ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio
         {
             return $"Sua Pizza é de sabor {Sabor} e tamanho {TamanhoDePizza}";  
         }
+
     }
 }
