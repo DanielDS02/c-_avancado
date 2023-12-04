@@ -9,6 +9,6 @@
     {
     }
 
-    public string NomeCliente(string nome) => nome = Nome;
+
 }
 
