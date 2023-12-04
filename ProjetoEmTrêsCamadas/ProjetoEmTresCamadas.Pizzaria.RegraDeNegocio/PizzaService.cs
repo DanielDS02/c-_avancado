@@ -11,14 +11,11 @@ namespace ProjetoEmTresCamadas.Pizzaria.RegraDeNegocio
         public int id { get; set; }
 
 
+
+
         public PizzaService()
         {
             
-        }
-
-        public void Pedido()
-        {
-                
         }
     }
 }
