@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Text.Json;
-
+using System.Text.Json.JsonSerializer;
 
 namespace ExercicioMusic
 {
@@ -29,16 +29,27 @@ namespace ExercicioMusic
 
 
 
-        public class Jason
+        public class Serializar
         {
             public string Serializar<Music>(Music music)
             {
+                File.ReadAllText(music)
                 return JsonSerializer.Serialize(music);
 
             }
 
             string fileName = "musicLibrary.json";
         }
+        public class WeatherForecast
+        {
+            public DateTimeOffset Date { get; set; }
+            public int TemperatureCelsius { get; set; }
+            public string? Summary { get; set; }
+        }
+
+
+                WeatherForecast? weatherForecast =
+               JsonSerializer.Deserialize<WeatherForecast>(Music);
 
     }
 }
